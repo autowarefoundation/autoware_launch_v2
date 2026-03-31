@@ -7,7 +7,7 @@ SCRIPT_DIR=$(
     pwd
 )
 
-# get autoware_launch directory
+# get autoware_v2_launch directory
 AUTOWARE_LAUNCH_DIR="$SCRIPT_DIR"/../../
 
 # define rviz files
