@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Trajectory Selector Launch File
+  This launch file orchestrates the selector stage of the generator-selector planning pipeline.
+  See: https://github.com/autowarefoundation/autoware/issues/6292
+
+  Selector stage:
+    Evaluates, filters, and ranks candidate trajectories from generators.
+
+  Topic flow:
+    /planning/generator/candidate_trajectories (CandidateTrajectories)
+      -> Safety Gate (filter unsafe)
+      -> Traffic Rule Validation (check compliance)
+      -> Ranking (score and rank)
+      -> /planning/selector/scored_candidate_trajectories (ScoredCandidateTrajectories)
+      -> Trajectory Adapter
+      -> /planning/trajectory (Trajectory)
+-->
+<launch>
+    <group>
+    <push-ros-namespace namespace="trajectory_selector"/>
+    <group unless="$(var enable_dummy_concatenator)">
+      <include file="$(find-pkg-share autoware_trajectory_concatenator)/launch/trajectory_concatenator.launch.xml">
+        <arg name="trajectory_concatenator_param_path" value="$(var trajectory_concatenator_param_path)"/>
+        <arg name="concatenator_input_trajectories" value="/planning/generator/candidate_trajectories"/>
+        <arg name="concatenator_output_trajectories" value="/planning/generator/concatenated/candidate_trajectories"/>
+      </include>
+    </group>
+    <group if="$(var enable_dummy_concatenator)">
+      <include file="$(find-pkg-share autoware_trajectory_dummy_concatenator)/launch/trajectory_dummy_concatenator.launch.xml">
+        <arg name="trajectory_concatenator_param_path" value="$(var trajectory_concatenator_param_path)"/>
+        <arg name="concatenator_input_trajectories" value="/planning/generator/candidate_trajectories"/>
+        <arg name="concatenator_output_trajectories" value="/planning/generator/concatenated/candidate_trajectories"/>
+      </include>
+    </group>
+    <include file="$(find-pkg-share autoware_trajectory_validator)/launch/trajectory_validator.launch.xml">
+      <arg name="trajectory_validator_param_path" value="$(var trajectory_validator_param_path)"/>
+      <arg name="input_trajectories" value="/planning/generator/concatenated/candidate_trajectories"/>
+      <arg name="output_trajectories" value="/planning/trajectory_selector/validator/candidate_trajectories"/>
+      <arg name="input_vector_map" value="/map/vector_map"/>
+      <arg name="input_odometry" value="/localization/kinematic_state"/>
+      <arg name="input_objects" value="/perception/object_recognition/objects"/>
+      <arg name="input_acceleration" value="/localization/acceleration"/>
+      <arg name="input_traffic_signals" value="/perception/traffic_light_recognition/traffic_signals"/>
+    </include>
+    <include file="$(find-pkg-share autoware_trajectory_ranker)/launch/simple_trajectory_ranker.launch.xml">
+      <arg name="trajectory_ranker_param_path" value="$(var trajectory_ranker_param_path)"/>
+      <arg name="input_trajectories" value="/planning/trajectory_selector/validator/candidate_trajectories"/>
+      <arg name="output_trajectories" value="/planning/trajectory_selector/ranker/scored_trajectories"/>
+    </include>
+    <include file="$(find-pkg-share autoware_trajectory_adapter)/launch/trajectory_adapter.launch.xml">
+      <arg name="input_trajectories" value="/planning/trajectory_selector/ranker/scored_trajectories"/>
+      <arg name="output_trajectory" value="/planning/trajectory"/>
+    </include>
+  </group>
+</launch>

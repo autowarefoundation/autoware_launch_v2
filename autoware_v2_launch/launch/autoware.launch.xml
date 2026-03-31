@@ -107,22 +107,17 @@
   </group>
 
   <!-- Planning -->
-  <group if="$(var launch_planning)">
-    <include file="$(find-pkg-share autoware_v2_launch)/launch/components/autoware_universe_planning_component.launch.xml">
-      <arg name="module_preset" value="$(var planning_module_preset)"/>
-      <arg name="enable_all_modules_auto_mode" value="$(var enable_all_modules_auto_mode)"/>
-      <arg name="is_simulation" value="$(var is_simulation)"/>
+  <group if="$(var launch_trajectory_generator)">
+    <include file="$(find-pkg-share autoware_universe_trajectory_generator_launch)/launch/autoware_trajectory_generator.launch.xml">
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
       <arg name="vehicle_model" value="$(var vehicle_model)"/>
     </include>
-
-    <!-- Relay node for trajectory topic -->
-    <!-- This is a temporary addition for migration purposes. -->
-    <!-- https://github.com/orgs/autowarefoundation/discussions/5033#discussioncomment-13704802 -->
-    <node pkg="topic_tools" exec="relay" name="trajectory_relay">
-      <param name="input_topic" value="/planning/trajectory"/>
-      <param name="output_topic" value="/planning/scenario_planning/trajectory"/>
-    </node>
+    <include file="$(find-pkg-share autoware_universe_trajectory_generator_launch)/launch/trajectory_selector.launch.xml">
+      <arg name="enable_dummy_concatenator" value="false"/>
+      <arg name="trajectory_concatenator_param_path" value="$(find-pkg-share autoware_v2_launch)/config/planning/trajectory_selector/trajectory_concatenator.param.yaml"/>
+      <arg name="trajectory_validator_param_path" value="$(find-pkg-share autoware_v2_launch)/config/planning/trajectory_selector/trajectory_validator.param.yaml"/>
+      <arg name="trajectory_ranker_param_path" value="$(find-pkg-share autoware_v2_launch)/config/planning/trajectory_selector/simple_trajectory_ranker.param.yaml"/>
+    </include>
   </group>
 
   <!-- Control -->
