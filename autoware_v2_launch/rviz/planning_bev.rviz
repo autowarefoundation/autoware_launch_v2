@@ -1521,7 +1521,7 @@ Visualization Manager:
                       Value: true
                     - Class: rviz_common/Group
                       Displays:
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(StaticObstacleAvoidance)
                           Namespaces:
@@ -1535,7 +1535,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(AvoidanceByLC)
                           Namespaces:
@@ -1549,7 +1549,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(LaneChangeRight)
                           Namespaces:
@@ -1563,7 +1563,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(LaneChangeLeft)
                           Namespaces:
@@ -1577,7 +1577,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(ExtLaneChangeRight)
                           Namespaces:
@@ -1591,7 +1591,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(ExtLaneChangeLeft)
                           Namespaces:
@@ -1605,7 +1605,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(GoalPlanner)
                           Namespaces:
@@ -1619,7 +1619,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(StartPlanner)
                           Namespaces:
@@ -1633,7 +1633,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(BidirectionalTraffic)
                           Namespaces:
@@ -1647,7 +1647,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(BlindSpot)
                           Namespaces:
@@ -1661,7 +1661,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(Crosswalk)
                           Namespaces:
@@ -1675,7 +1675,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(Walkway)
                           Namespaces:
@@ -1689,7 +1689,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(DetectionArea)
                           Namespaces:
@@ -1703,7 +1703,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(Intersection)
                           Namespaces:
@@ -1717,7 +1717,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(IntersectionOcclusion)
                           Namespaces:
@@ -1731,7 +1731,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(MergeFromPrivateArea)
                           Namespaces:
@@ -1745,7 +1745,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(NoStoppingArea)
                           Namespaces:
@@ -1759,7 +1759,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(OcclusionSpot)
                           Namespaces:
@@ -1773,7 +1773,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(StopLine)
                           Namespaces:
@@ -1787,7 +1787,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(TrafficLight)
                           Namespaces:
@@ -1801,7 +1801,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(VirtualTrafficLight)
                           Namespaces:
@@ -1815,7 +1815,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(SpeedBump)
                           Namespaces:
@@ -1829,7 +1829,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(NoDrivableLane)
                           Namespaces:
@@ -1843,7 +1843,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(SideShift)
                           Namespaces:
@@ -1857,7 +1857,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(DynamicObstacleAvoidance)
                           Namespaces:
@@ -1871,7 +1871,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(BehaviorPathPlanner)
                           Namespaces:
@@ -1956,7 +1956,7 @@ Visualization Manager:
                       Name: VirtualWall
                     - Class: rviz_common/Group
                       Displays:
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(SurroundObstacle)
                           Namespaces:
@@ -1970,7 +1970,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(ObstacleStop)
                           Namespaces:
@@ -1984,7 +1984,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(ObstacleSlowDown)
                           Namespaces:
@@ -1998,7 +1998,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(ObstacleCruise)
                           Namespaces:
@@ -2012,7 +2012,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(OutOfLane)
                           Namespaces:
@@ -2026,7 +2026,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(DynamicObstacleStop)
                           Namespaces:
@@ -2040,7 +2040,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(RunOut)
                           Namespaces:
@@ -2054,7 +2054,7 @@ Visualization Manager:
                           Show Safety Factors: true
                           show_safety_factors: true
                           Value: true
-                        - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                        - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                           Enabled: true
                           Name: PlanningFactor(RoadUserStop)
                           Namespaces:
@@ -2209,7 +2209,7 @@ Visualization Manager:
                   Value: false
                 - Class: rviz_common/Group
                   Displays:
-                    - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                    - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                       Enabled: true
                       Name: PlanningFactor(RearCollisionChecker)
                       Namespaces:
@@ -2223,7 +2223,7 @@ Visualization Manager:
                       Value: true
                       Show Safety Factors: true
                       show_safety_factors: true
-                    - Class: tier4_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
+                    - Class: autoware_universe_planning_factor_rviz_plugin/PlanningFactorRvizPlugin
                       Enabled: true
                       Name: PlanningFactor(IntersectionCollisionChecker)
                       Namespaces:
@@ -4209,14 +4209,14 @@ Visualization Manager:
     - Class: rviz_default_plugins/Select
     - Class: rviz_default_plugins/FocusCamera
     - Boost Property: 0.5
-      Class: tier4_camera_view_rviz_plugin/ThirdPersonViewTool
-      Fallback ViewController: tier4_camera_view_rviz_plugin/ThirdPersonView
+      Class: autoware_universe_camera_view_rviz_plugin/ThirdPersonViewTool
+      Fallback ViewController: autoware_universe_camera_view_rviz_plugin/ThirdPersonView
       Fly Mode: false
       Left Hand Mode: false
       Step Length: 0.10000000149011612
     - Boost Property: 0.5
-      Class: tier4_camera_view_rviz_plugin/BirdEyeViewTool
-      Fallback ViewController: tier4_camera_view_rviz_plugin/BirdEyeView
+      Class: autoware_universe_camera_view_rviz_plugin/BirdEyeViewTool
+      Fallback ViewController: autoware_universe_camera_view_rviz_plugin/BirdEyeView
       Fly Mode: false
       Left Hand Mode: false
       Step Length: 0.10000000149011612
@@ -4232,7 +4232,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: tier4_camera_view_rviz_plugin/ThirdPersonView
+      Class: autoware_universe_camera_view_rviz_plugin/ThirdPersonView
       Distance: 115.53753662109375
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -4250,7 +4250,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: base_link
-      Value: ThirdPersonView (tier4_camera_view_rviz_plugin)
+      Value: ThirdPersonView (autoware_universe_camera_view_rviz_plugin)
       Yaw: 3.1415927410125732
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower

@@ -4478,14 +4478,14 @@ Visualization Manager:
     - Class: rviz_default_plugins/Select
     - Class: rviz_default_plugins/FocusCamera
     - Boost Property: 0.5
-      Class: tier4_camera_view_rviz_plugin/ThirdPersonViewTool
-      Fallback ViewController: tier4_camera_view_rviz_plugin/ThirdPersonView
+      Class: autoware_universe_camera_view_rviz_plugin/ThirdPersonViewTool
+      Fallback ViewController: autoware_universe_camera_view_rviz_plugin/ThirdPersonView
       Fly Mode: false
       Left Hand Mode: false
       Step Length: 0.10000000149011612
     - Boost Property: 0.5
-      Class: tier4_camera_view_rviz_plugin/BirdEyeViewTool
-      Fallback ViewController: tier4_camera_view_rviz_plugin/BirdEyeView
+      Class: autoware_universe_camera_view_rviz_plugin/BirdEyeViewTool
+      Fallback ViewController: autoware_universe_camera_view_rviz_plugin/BirdEyeView
       Fly Mode: false
       Left Hand Mode: false
       Step Length: 0.10000000149011612
@@ -4495,7 +4495,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: tier4_camera_view_rviz_plugin/ThirdPersonView
+      Class: autoware_universe_camera_view_rviz_plugin/ThirdPersonView
       Distance: 111.22172546386719
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -4513,7 +4513,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: base_link
-      Value: ThirdPersonView (tier4_camera_view_rviz_plugin)
+      Value: ThirdPersonView (autoware_universe_camera_view_rviz_plugin)
       Yaw: 3.141592025756836
     Saved:
       - Class: rviz_default_plugins/ThirdPersonFollower

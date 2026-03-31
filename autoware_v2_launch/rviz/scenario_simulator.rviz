@@ -2995,7 +2995,7 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /planning/mission_planning/goal
-    - Class: tier4_adapi_rviz_plugins::RouteTool
+    - Class: autoware_universe_adapi_rviz_plugins::RouteTool
       Topic:
         Depth: 5
         Durability Policy: Volatile
